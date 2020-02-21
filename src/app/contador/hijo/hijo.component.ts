@@ -20,12 +20,12 @@ export class HijoComponent implements OnInit {
   }
 
   multiplicar() {
-    const accion = new MultiplicarAction();
+    const accion = new MultiplicarAction(2);
     this.store.dispatch(accion);
   }
 
   dividir() {
-    const accion = new DividirAction();
+    const accion = new DividirAction(2);
     this.store.dispatch(accion);
   }
 
